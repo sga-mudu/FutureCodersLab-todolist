@@ -115,6 +115,9 @@ form .input-container{
     color: var(--black);
     outline: none;
 }
+#input.active{
+    animation: gradient-animation 3s linear infinite;
+}
 #input::placeholder{
     color: var(--blue);
     opacity: 0.6;
@@ -162,6 +165,14 @@ form .input-container{
     color: var(--black);
     border: 2px solid transparent;
     transition: 0.3s ease border;
+}
+
+.task.editing{
+    border: 2px solid var(--blue);
+}
+
+.task.completed label{
+    text-decoration: line-through;
 }
 
 .checkbox-container{
